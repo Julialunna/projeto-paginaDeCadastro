@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body{
+    background-image: linear-gradient(.25turn,#4a5ac9, 
+    #b959bb);
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    padding-bottom:8%;
+}
+main{
+    height:100vh;
+}
+.cadastro{
+    background-color: white;
+    width:60%;
+    margin: 8% auto;
+    margin-bottom: 15%;
+    border-radius: 15px;
+    padding: 0.3em 4em 2em 0;
+    position: relative;
+    height:100%;
+}
+.questionario{
+    position:absolute;
+    width:70%;
+    right:0;
+    top:20px;
+}
+.questionario h1{
+    font-size: 1.2em;
+}
+img{
+    width:20%;
+    display: inline-block;  
+    margin: 25% 1em 20% 2em;  
+}
+.titulo{
+    font-weight: bold;
+    text-align: center;
+    margin:0.8em 0;
+}
+label{
+    display: block;
+}
+.input{
+    width: 90%;
+    margin: 1% 3%;
+    border:0;
+    border-radius: 20px;
+    background-color: #e3e3e3;
+    padding: 1em 0 1em 1.2em;
+}
+.questionario h2{
+    padding: 0 0.5em 0.4em 1.5em;
+    margin-top: 0.5em;
+}
+
+input[type="date"]{
+    color: #808080;
+}
+.enviar{
+    background-color: #4a5ac9;
+    border: 0px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    padding: 1em 2em;
+    /*margin: 0.5em 1em 0 1em;*/
+    margin:2% 35%;
+    border-radius: 20px;
+}
+.input-container--invalido {
+    margin-bottom: 0.5rem;
+}
+
+.input-container--invalido .input {
+    border: 1px solid red;
+    border-radius: 20px;
+}
+
+.input-container--invalido .input-label {
+    color: red;
+}
+
+.input-mensagem-erro {
+    display: none;
+}
+
+.input-container--invalido .input-mensagem-erro {
+    color: red;
+    display: block;
+    margin-top: 0.5rem;
+    padding-left: 1.5rem;
+    font-size: 0.8em;
+}
+
+@media screen and (max-width: 480px){
+    img{
+        display: block;
+        margin:auto;
+    }
+    .cadastro{
+        padding:1em;
+    }
+   main{
+    margin: auto;
+   }
+    .questionario{
+        margin: auto;
+        position: static;
+    }
+    .enviar{
+        padding:0.5em;
+        margin: 10px;
+    }
+}

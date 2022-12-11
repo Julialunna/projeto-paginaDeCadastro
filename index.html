@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/cadastro.css">
+    <title>Lunna Veiculos</title>
+</head>
+<body>
+    <header>
+    </header>
+    <main>
+        <div class="cadastro">
+            <img src="imagens/teste.png"alt="">
+         <div class="questionario">
+            <h1 class="titulo">Página de cadastro</h1>
+             <form>
+                <fieldset>
+                    <h2>Informações básicas</h2>
+                    <div class="input-container">
+                        <label for="nomecompleto"></label>
+                        <input name="nome" type="text" class="input" class=".input-container--invalido" data-tipo="nome"id="nomeCompleto" placeholder="Nome de usuário" pattern="\w+(?!.*[\s]).{5,15}"required>
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                    </div>
+                    <div class="input-container">
+                        <label for="email"></label>
+                        <input type="email" name="email" class="input" id="email" placeholder="seuemail@dominio.com" data-tipo="email"required>
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                    </div>
+                    <div class="input-container">
+                        <label for="senha"></label>
+                        <input type="password" name="senha" class="input" id="senha" placeholder="Senha" data-tipo="senha" pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*[\d])(?=.*[!@#$%¨&^*_=+-]).{6,12}$"required>
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <h2>Informações pessoais</h2>
+                    <div class="input-container">
+                        <label for="dataDeNascimento"></label>
+                        <input type="date" class="input" id="dataNascimento" name="data" data-tipo="dataNascimento"required>
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                    </div>
+                    <div class="input-container">
+                        <label for="cpf"></label>
+                        <input type="text"placeholder="CPF" class="input" id="cpf" name="cpf" data-tipo="cpf"required>
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <h2>Endereço</h2>
+                    <div class="input-container">
+                        <label for="cep"></label>
+                        <input type="text" class="input" id="cep" name="cep" placeholder="CEP" data-tipo="cep" pattern="\d{5}-?\d{3}"required>
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                    </div>
+                    <div class="input-container">
+                        <label for="logradouro"></label>
+                        <input type="text" class="input" placeholder="Logradouro"id="logradouro" name="logradouro" data-tipo="logradouro"required>
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                    </div>
+                    <div class="input-container">
+                        <label for="cidade"></label>
+                        <input type="text" class="input" id="cidade" placeholder="Cidade"name="cidade" data-tipo="cidade"required>
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                    </div>
+                    <div class="input-container">
+                        <label for="estado"></label>
+                        <input type="text" class="input" id="estado" placeholder="Estado" name="estado" data-tipo="estado" required>
+                        <span class="input-mensagem-erro">Este campo não está válido</span>
+                    </div>
+                </fieldset>
+                <input type="submit" value="Enviar formulario" class="enviar">
+             </form>
+         </div>
+        </div>
+        </p>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="js/app.js" type="module"></script>
+</body>
+</html>
